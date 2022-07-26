@@ -72,15 +72,8 @@ window.Game = (function () {
       height: canvas.getAttribute("height"),
     };
 
-    if (ratioTolerant == "true") {
       newStyle = { width: maxWidth, height: maxHeight };
-    } else if (ratioTolerant == "false") {
-      if (gameSizeRatio > windowSizeRatio) {
-        newStyle = { width: maxWidth, height: maxWidth / gameSizeRatio };
-      } else {
-        newStyle = { width: maxHeight * gameSizeRatio, height: maxHeight };
-      }
-    }
+    
 
     if (br) {
       br.style.display = "none";
