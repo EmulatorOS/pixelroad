@@ -64,7 +64,7 @@ window.Game = (function () {
     var ratioTolerant = this.getQueryVariable("ratio_tolerant");
     var gameSizeRatio =
       canvas.getAttribute("width") / canvas.getAttribute("height");
-    var maxHeight = window.innerHeight - 56; // minus the footer
+    var maxHeight = window.innerHeight; // minus the footer
     var maxWidth = window.innerWidth;
     var windowSizeRatio = maxWidth / maxHeight;
     var newStyle = {
